@@ -1,0 +1,78 @@
+.intro {
+  display: flex;
+  height: 77vh;
+  margin-top: 6rem;
+}
+.i-left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+}
+.name > :nth-child(1) {
+  color: black;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.name > :nth-child(2) {
+  color: orange;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.name > :nth-child(3) {
+  font-weight: 100;
+  font-size: 20px;
+  color: gray;
+  margin-top: 10px;
+}
+.icons {
+  margin-top: 3rem;
+  display: flex;
+  gap: 0rem;
+}
+.icons > * {
+  transform: scale(0.5);
+}
+.i-right {
+  flex: 1;
+  position: relative;
+}
+.i-right > * {
+  position: absolute;
+  z-index: 1;
+}
+.i-right > :nth-child(1) {
+  transform: scale(1.1);
+  left: 20%;
+  top: -11%;
+}
+.i-right > :nth-child(2) {
+  transform: scale(0.67);
+  left: -3rem;
+  top: -4.6%;
+}
+.i-right > :nth-child(3) {
+  transform: scale(1.1);
+  left: 10%;
+  top: -10%;
+}
+@media screen and (max-width: 480px) {
+  .intro {
+    flex-direction: column;
+    gap: 7rem;
+    height: 64rem;
+  }
+  .i-right {
+    margin-top: -230px;
+    transform: scale(0.8);
+    left: -7rem;
+  }
+  .name > :nth-child(3) {
+    font-size: 17px;
+  }
+}
